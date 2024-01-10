@@ -1,15 +1,9 @@
 name: GitHub Actions Demo
-run-name: ${{ github.actor }} is testing out GitHub Actions 🚀
-on:
-  push:
-    branches:
-      -main
-      -branch1
-      -branch2
-      -branch4
-
+on: push
+    
 jobs:
   echo-message:
     runs-on: ubuntu-latest
     steps:
-      - run: echo "You have pushed something to Repo"
+      - name: First
+        run: echo "You have pushed something to Repo"
